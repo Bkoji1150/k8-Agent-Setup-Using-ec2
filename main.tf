@@ -3,11 +3,11 @@
 module "ec2_instance" {
   source = "terraform-aws-modules/ec2-instance/aws"
 
-  for_each = toset(var.instance_name)
+  count = length(var.instance_name)
 
   version       = "~> 3.0"
   ami           = "ami-04505e74c0741db8d"
-  name          = "instance-${each.key}"
+  name          = var.instance_name[count.index]
   instance_type = "t2.medium"
   monitoring    = true
 
@@ -15,8 +15,8 @@ module "ec2_instance" {
   key_name                    = aws_key_pair.deployer.id
 
   tags = {
-    Name        = "instance-${each.key}"
-    Environment = "sbx"
+    Name        = var.instance_name[count.index]
+    Environment = var.Envi_Choice[count.index]
   }
 }
 

@@ -28,8 +28,9 @@ No requirements.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
+| <a name="input_Envi_Choice"></a> [Envi\_Choice](#input\_Envi\_Choice) | Preferred Env to run the Template, choose sbx/prod | `list(any)` | <pre>[<br>  "prod",<br>  "prod"<br>]</pre> | no |
 | <a name="input_aws_region"></a> [aws\_region](#input\_aws\_region) | Region to which this Template would be deployed in. | `string` | `"us-east-1"` | no |
-| <a name="input_instance_name"></a> [instance\_name](#input\_instance\_name) | Instance name | `list(any)` | <pre>[<br>  "k8_controler",<br>  "K8_Nodes"<br>]</pre> | no |
+| <a name="input_instance_name"></a> [instance\_name](#input\_instance\_name) | Instance name | `list(any)` | <pre>[<br>  "k8_controller",<br>  "K8_Nodes"<br>]</pre> | no |
 | <a name="input_public_key_path"></a> [public\_key\_path](#input\_public\_key\_path) | n/a | `string` | `"/Users/kojibello/.ssh/s3_key.pub"` | no |
 
 ## Outputs

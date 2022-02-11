@@ -13,5 +13,14 @@ variable "public_key_path" {
 variable "instance_name" {
   description = "Instance name"
   type        = list(any)
-  default     = ["k8_controler", "K8_Nodes"]
+  default     = ["k8_controller", "K8_Nodes"]
+}
+
+variable "Envi_Choice" {
+  description = "Preferred Env to run the Template, choose sbx/prod"
+  type        = list(any)
+  default = [
+    "prod",
+    "prod"
+  ]
 }
