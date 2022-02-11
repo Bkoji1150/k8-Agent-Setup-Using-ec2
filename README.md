@@ -17,7 +17,6 @@ No requirements.
 | Name | Source | Version |
 |------|--------|---------|
 | <a name="module_ec2_instance"></a> [ec2\_instance](#module\_ec2\_instance) | terraform-aws-modules/ec2-instance/aws | ~> 3.0 |
-| <a name="module_ec2_k82Node"></a> [ec2\_k82Node](#module\_ec2\_k82Node) | terraform-aws-modules/ec2-instance/aws | ~> 3.0 |
 
 ## Resources
 
@@ -30,6 +29,7 @@ No requirements.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_aws_region"></a> [aws\_region](#input\_aws\_region) | Region to which this Template would be deployed in. | `string` | `"us-east-1"` | no |
+| <a name="input_instance_name"></a> [instance\_name](#input\_instance\_name) | Instance name | `list(any)` | <pre>[<br>  "k8_controler",<br>  "K8_Nodes"<br>]</pre> | no |
 | <a name="input_public_key_path"></a> [public\_key\_path](#input\_public\_key\_path) | n/a | `string` | `"/Users/kojibello/.ssh/s3_key.pub"` | no |
 
 ## Outputs

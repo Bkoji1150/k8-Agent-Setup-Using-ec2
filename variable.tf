@@ -9,3 +9,9 @@ variable "public_key_path" {
   type    = string
   default = "/Users/kojibello/.ssh/s3_key.pub"
 }
+
+variable "instance_name" {
+  description = "Instance name"
+  type        = list(any)
+  default     = ["k8_controler", "K8_Nodes"]
+}
