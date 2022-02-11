@@ -15,7 +15,7 @@ module "ec2_instance" {
   key_name                    = aws_key_pair.deployer.id
 
   tags = {
-    Name        = "Ubuntu-Server"
+    Name        = "instance-${each.key}"
     Environment = "sbx"
   }
 }
