@@ -17,6 +17,7 @@ No requirements.
 | Name | Source | Version |
 |------|--------|---------|
 | <a name="module_ec2_instance"></a> [ec2\_instance](#module\_ec2\_instance) | terraform-aws-modules/ec2-instance/aws | ~> 3.0 |
+| <a name="module_ec2_k82Node"></a> [ec2\_k82Node](#module\_ec2\_k82Node) | terraform-aws-modules/ec2-instance/aws | ~> 3.0 |
 
 ## Resources
 
